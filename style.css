@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+.line {
+    width: 20rem;
+    height: 1rem;
+    background-color: #ccc;
+    border: 2px solid black;
+    margin: 1rem auto;
+    margin-top: 7rem;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background-color: #2196F3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+
+
+
+.card {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: 23rem;
+    height: 36rem;
+    border: 2px solid black;
+    margin-top: 5rem;
+}
+
+.smallcard {
+    width: 19rem;
+    height: 18rem;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    margin-left: 1.9rem;
+    margin-top: 2rem;
+
+}
+
+
+
+.play {
+    padding: 25px;
+    font-size: 20px;
+    border-radius: 50%;
+    font-weight: 500;
+    width: 5rem;
+    height: 5rem
+}
+
+.next {
+    border-radius: 50%;
+    font-weight: 800;
+    padding: 20px;
+}
+
+.back {
+    border-radius: 50%;
+    font-weight: 800;
+    padding: 20px;
+}
+
+button {
+    margin: 10px;
+    ;
+}
+
+.btns {
+    margin-left: 3rem;
+}
+
+.disc {
+    width: 10rem;
+    border: 2px solid black;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.disc img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.playing .disc {
+    animation: spin 3s linear infinite
+}
